@@ -1,0 +1,23 @@
+[user]
+	name = Jason Rasmussen
+	email = jrasm91@gmail.com
+	signingkey = 75AD31BF84C94773
+[core]
+	editor = vim
+[log]
+	date = relative
+[format]
+	pretty = format:%C(yellow)%h %Cblue%>(14)%ad %Cgreen%<(16)%aN%Cred%d %Creset%s
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+
+[alias]
+  stash-untracked = "!f() {    \
+      git stash;               \
+      git stash -u;            \
+      git stash pop stash@{1}; \
+  }; f"
+[commit]
+	gpgsign = true
